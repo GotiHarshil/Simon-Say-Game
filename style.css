@@ -1,0 +1,121 @@
+body {
+    background-color: rgb(255, 253, 240);
+    text-align: center;
+}
+
+
+.btn{
+    height: 200px;
+    width: 200px;
+    margin: 35px 20px;
+    background: #333;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    cursor: pointer;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: Consolas, Courier New, monospace;
+    border: solid #404c5d 1px;
+    font-size: 16px;
+    color: rgb(161, 161, 161);
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    border-radius: 5px;
+    /* background: linear-gradient(145deg, , ); */
+    /* -webkit-box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b, */
+    /* inset 5px 5px 10px , inset -5px -5px 10px ; */
+    box-shadow: -1px -5px 15px #41465b, 5px 5px 15px #41465b,
+    inset 5px 5px 10px , inset -5px -5px 10px ;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 13px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+}
+
+.btn:active {
+    -webkit-box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    box-shadow: 1px 1px 13px #20232e, -1px -1px 33px #545b78;
+    color: #d6d6d6;
+    -webkit-transition: 100ms;
+    transition: 100ms;
+  }
+
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+.green{
+    background-color: #63aac0;
+    border-bottom-left-radius: 100%;
+}
+
+.red{
+    background-color: #d9597f;
+    border-top-left-radius: 100%;
+}
+
+.yellow{
+    background-color: #f99b45;
+    border-top-right-radius: 100%;
+}
+
+.purple{
+    background-color: #819ff9;
+    border-bottom-right-radius: 100%;
+}
+
+
+.flash{
+    background-color: white;
+}
+
+.userflash{
+    background-color: rgb(41, 45, 44);
+}
+
+.gameOver{
+    background-color: red;
+}
+
+
+.restart {
+
+    /* Variables */
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+  
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+  
+.restart:hover .button_top {
+    /* Pull the button upwards when hovered */
+    transform: translateY(-0.33em);
+}
+  
+.restart:active .button_top {
+    /* Push the button downwards when pressed */
+    transform: translateY(0);
+}
